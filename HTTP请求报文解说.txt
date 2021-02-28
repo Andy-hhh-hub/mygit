@@ -1,0 +1,24 @@
+
+HTTP请求报文由3部分组成（请求行+请求头+请求体）
+请求行格式：请求方式 资源路径 协议/版本
+	请求行必须在http请求格式的第一行。
+例如：POST /chapter17/user.html HTTP/1.1
+
+请求头与请求体（键值对）：请求头从第二行开始，到第一个空格结束。请求头和请求体之间存在一个空格
+有一些主要属性：
+Accept:告诉服务端,该请求所能支持的响应数据类型,专业术语称为MIME 类型(文件类型的一种描述方式)
+如：Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+
+User-Agent:浏览器通知服务器，客户端浏览器与操作系统相关信息
+如：User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+
+Content-Encoding:用于指定可接受的内容编码
+
+Cokkie：客户端的Cookie就是通过这个报文头属性传给服务端的
+如：Cookie: JSESSIONID=15982C27F7507C7FDAF0F97161F634B5
+
+User-Agent:浏览器通知服务器，客户端浏览器与操作系统相关信息
+如：User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+
+Host:请求的服务器主机名
+如：Host: sczpkj.f3322.net:3000
